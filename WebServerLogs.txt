@@ -1,0 +1,1009 @@
+2023-09-23 15:49:39 
+2023-09-23 15:49:39 Http Worker is working...
+2023-09-23 15:49:39 GET / HTTP/1.1
+2023-09-23 15:49:39 > This is a [DIRECTORY EXPLORE] request..
+2023-09-23 15:49:39 >> Explore the content under folder: sockets-udp-tcp
+2023-09-23 15:49:39 >>> Directory: .git
+2023-09-23 15:49:39 >>> Directory: .idea
+2023-09-23 15:49:39 >>> Directory: .vscode
+2023-09-23 15:49:39 >>> Directory: src
+2023-09-23 15:49:39 >>> Directory: target
+2023-09-23 15:49:39 >>> File: .gitignore
+2023-09-23 15:49:39 >>> File: README.md
+2023-09-23 15:49:39 >>> File: pom.xml
+2023-09-23 15:49:39 
+2023-09-23 15:49:39 Http Worker is working...
+2023-09-23 15:49:39 GET /images/folder.png HTTP/1.1
+2023-09-23 15:49:39 >> No such resource:/images/folder.png
+2023-09-23 15:49:39 
+2023-09-23 15:49:39 Http Worker is working...
+2023-09-23 15:49:39 GET /images/file.png HTTP/1.1
+2023-09-23 15:49:39 >> No such resource:/images/file.png
+2023-09-23 15:49:39 
+2023-09-23 15:49:39 Http Worker is working...
+2023-09-23 15:49:39 GET /images/xml.png HTTP/1.1
+2023-09-23 15:49:39 >> No such resource:/images/xml.png
+2023-09-23 15:49:39 
+2023-09-23 15:49:39 Http Worker is working...
+2023-09-23 15:49:39 GET /favicon.ico HTTP/1.1
+2023-09-23 15:49:39 >> No such resource:/favicon.ico
+2023-09-23 15:49:47 
+2023-09-23 15:49:47 Http Worker is working...
+2023-09-23 15:49:47 GET /src HTTP/1.1
+2023-09-23 15:49:47 > This is a [DIRECTORY EXPLORE] request..
+2023-09-23 15:49:47 >> Explore the content under folder: src
+2023-09-23 15:49:47 >>> Directory: main
+2023-09-23 15:49:47 
+2023-09-23 15:49:47 Http Worker is working...
+2023-09-23 15:49:47 GET /images/folder.png HTTP/1.1
+2023-09-23 15:49:47 >> No such resource:/images/folder.png
+2023-09-23 15:49:47 
+2023-09-23 15:49:47 Http Worker is working...
+2023-09-23 15:49:47 GET /favicon.ico HTTP/1.1
+2023-09-23 15:49:47 >> No such resource:/favicon.ico
+2023-09-23 15:49:48 
+2023-09-23 15:49:48 Http Worker is working...
+2023-09-23 15:49:48 GET /src/main HTTP/1.1
+2023-09-23 15:49:48 > This is a [DIRECTORY EXPLORE] request..
+2023-09-23 15:49:48 >> Explore the content under folder: main
+2023-09-23 15:49:48 >>> Directory: java
+2023-09-23 15:49:48 
+2023-09-23 15:49:48 Http Worker is working...
+2023-09-23 15:49:48 GET /images/folder.png HTTP/1.1
+2023-09-23 15:49:48 >> No such resource:/images/folder.png
+2023-09-23 15:49:49 
+2023-09-23 15:49:49 Http Worker is working...
+2023-09-23 15:49:49 GET /favicon.ico HTTP/1.1
+2023-09-23 15:49:49 >> No such resource:/favicon.ico
+2023-09-23 15:49:49 
+2023-09-23 15:49:49 Http Worker is working...
+2023-09-23 15:49:49 GET /src/main/java HTTP/1.1
+2023-09-23 15:49:49 > This is a [DIRECTORY EXPLORE] request..
+2023-09-23 15:49:49 >> Explore the content under folder: java
+2023-09-23 15:49:49 >>> Directory: org
+2023-09-23 15:49:50 
+2023-09-23 15:49:50 Http Worker is working...
+2023-09-23 15:49:50 GET /images/folder.png HTTP/1.1
+2023-09-23 15:49:50 >> No such resource:/images/folder.png
+2023-09-23 15:49:50 
+2023-09-23 15:49:50 Http Worker is working...
+2023-09-23 15:49:50 GET /favicon.ico HTTP/1.1
+2023-09-23 15:49:50 >> No such resource:/favicon.ico
+2023-09-23 15:49:50 
+2023-09-23 15:49:50 Http Worker is working...
+2023-09-23 15:49:50 GET /src/main/java/org HTTP/1.1
+2023-09-23 15:49:50 > This is a [DIRECTORY EXPLORE] request..
+2023-09-23 15:49:50 >> Explore the content under folder: org
+2023-09-23 15:49:50 >>> Directory: example
+2023-09-23 15:49:51 
+2023-09-23 15:49:51 Http Worker is working...
+2023-09-23 15:49:51 GET /images/folder.png HTTP/1.1
+2023-09-23 15:49:51 >> No such resource:/images/folder.png
+2023-09-23 15:49:51 
+2023-09-23 15:49:51 Http Worker is working...
+2023-09-23 15:49:51 GET /favicon.ico HTTP/1.1
+2023-09-23 15:49:51 >> No such resource:/favicon.ico
+2023-09-23 15:49:52 
+2023-09-23 15:49:52 Http Worker is working...
+2023-09-23 15:49:52 GET /src/main/java/org/example HTTP/1.1
+2023-09-23 15:49:52 > This is a [DIRECTORY EXPLORE] request..
+2023-09-23 15:49:52 >> Explore the content under folder: example
+2023-09-23 15:49:52 >>> File: HttpWorker.java
+2023-09-23 15:49:52 >>> File: LogUtil.java
+2023-09-23 15:49:52 >>> File: Main.java
+2023-09-23 15:49:52 >>> File: SimpleHTTPServer.java
+2023-09-23 15:49:52 >>> File: ToUpperWebsocket.java
+2023-09-23 15:49:52 >>> File: WebServer.java
+2023-09-23 15:49:52 >>> File: WebSocket.java
+2023-09-23 15:49:52 
+2023-09-23 15:49:52 Http Worker is working...
+2023-09-23 15:49:52 GET /images/folder.png HTTP/1.1
+2023-09-23 15:49:52 >> No such resource:/images/folder.png
+2023-09-23 15:49:52 
+2023-09-23 15:49:52 Http Worker is working...
+2023-09-23 15:49:52 GET /images/java.png HTTP/1.1
+2023-09-23 15:49:52 >> No such resource:/images/java.png
+2023-09-23 15:49:52 
+2023-09-23 15:49:52 Http Worker is working...
+2023-09-23 15:49:52 GET /favicon.ico HTTP/1.1
+2023-09-23 15:49:52 >> No such resource:/favicon.ico
+2023-09-23 15:49:53 
+2023-09-23 15:49:53 Http Worker is working...
+2023-09-23 15:49:53 GET /src/main/java/org/example/Main.java HTTP/1.1
+2023-09-23 15:49:53 > This is a [SINGLE FILE] request..
+2023-09-23 15:49:53 >> Seek the content of file: Main.java
+2023-09-23 15:49:53 
+2023-09-23 15:49:53 Http Worker is working...
+2023-09-23 15:49:53 GET /favicon.ico HTTP/1.1
+2023-09-23 15:49:53 >> No such resource:/favicon.ico
+2023-09-23 15:49:54 
+2023-09-23 15:49:54 Http Worker is working...
+2023-09-23 15:49:54 GET /favicon.ico HTTP/1.1
+2023-09-23 15:49:54 >> No such resource:/favicon.ico
+2023-09-23 15:49:55 
+2023-09-23 15:49:55 Http Worker is working...
+2023-09-23 15:49:55 GET /favicon.ico HTTP/1.1
+2023-09-23 15:49:55 >> No such resource:/favicon.ico
+2023-09-23 15:50:31 
+2023-09-23 15:50:31 Http Worker is working...
+2023-09-23 15:50:31 GET /favicon.ico HTTP/1.1
+2023-09-23 15:50:31 >> No such resource:/favicon.ico
+2023-09-23 15:50:32 
+2023-09-23 15:50:32 Http Worker is working...
+2023-09-23 15:50:32 GET / HTTP/1.1
+2023-09-23 15:50:32 > This is a [DIRECTORY EXPLORE] request..
+2023-09-23 15:50:32 >> Explore the content under folder: sockets-udp-tcp
+2023-09-23 15:50:32 >>> Directory: .git
+2023-09-23 15:50:32 >>> Directory: .idea
+2023-09-23 15:50:32 >>> Directory: .vscode
+2023-09-23 15:50:32 >>> Directory: src
+2023-09-23 15:50:32 >>> Directory: target
+2023-09-23 15:50:32 >>> File: .gitignore
+2023-09-23 15:50:32 >>> File: README.md
+2023-09-23 15:50:32 >>> File: WebServerLogs.txt
+2023-09-23 15:50:32 >>> File: pom.xml
+2023-09-23 15:50:33 
+2023-09-23 15:50:33 GET /images/text.png HTTP/1.1
+2023-09-23 15:50:33 Http Worker is working...
+2023-09-23 15:50:33 GET /images/xml.png HTTP/1.1
+2023-09-23 15:50:33 >> No such resource:/images/xml.png
+2023-09-23 15:50:33 >> No such resource:/images/text.png
+2023-09-23 15:50:33 
+2023-09-23 15:50:33 GET /images/text.png HTTP/1.1
+2023-09-23 15:50:33 Http Worker is working...
+2023-09-23 15:50:33 GET /images/xml.png HTTP/1.1
+2023-09-23 15:50:33 >> No such resource:/images/xml.png
+2023-09-23 15:50:33 >> No such resource:/images/text.png
+2023-09-23 15:50:34 
+2023-09-23 15:50:34 Http Worker is working...
+2023-09-23 15:50:34 GET /images/folder.png HTTP/1.1
+2023-09-23 15:50:34 >> No such resource:/images/folder.png
+2023-09-23 15:50:34 
+2023-09-23 15:50:34 Http Worker is working...
+2023-09-23 15:50:34 GET /images/file.png HTTP/1.1
+2023-09-23 15:50:34 >> No such resource:/images/file.png
+2023-09-23 15:53:19 
+2023-09-23 15:53:19 Http Worker is working...
+2023-09-23 15:53:19 GET / HTTP/1.1
+2023-09-23 15:53:19 > This is a [DIRECTORY EXPLORE] request..
+2023-09-23 15:53:19 >> Explore the content under folder: sockets-udp-tcp
+2023-09-23 15:53:19 >>> Directory: .git
+2023-09-23 15:53:19 >>> Directory: .idea
+2023-09-23 15:53:19 >>> Directory: .vscode
+2023-09-23 15:53:19 >>> Directory: src
+2023-09-23 15:53:19 >>> Directory: target
+2023-09-23 15:53:19 >>> File: .gitignore
+2023-09-23 15:53:19 >>> File: README.md
+2023-09-23 15:53:19 >>> File: WebServerLogs.txt
+2023-09-23 15:53:19 >>> File: pom.xml
+2023-09-23 15:53:20 
+2023-09-23 15:53:20 Http Worker is working...
+2023-09-23 15:53:20 GET /images/folder.png HTTP/1.1
+2023-09-23 15:53:20 >> No such resource:/images/folder.png
+2023-09-23 15:53:20 
+2023-09-23 15:53:20 Http Worker is working...
+2023-09-23 15:53:20 GET /images/file.png HTTP/1.1
+2023-09-23 15:53:20 >> No such resource:/images/file.png
+2023-09-23 15:53:20 
+2023-09-23 15:53:20 Http Worker is working...
+2023-09-23 15:53:20 GET /images/text.png HTTP/1.1
+2023-09-23 15:53:20 >> No such resource:/images/text.png
+2023-09-23 15:53:20 
+2023-09-23 15:53:20 Http Worker is working...
+2023-09-23 15:53:20 GET /images/xml.png HTTP/1.1
+2023-09-23 15:53:20 >> No such resource:/images/xml.png
+2023-09-23 15:53:21 
+2023-09-23 15:53:21 Http Worker is working...
+2023-09-23 15:53:21 GET / HTTP/1.1
+2023-09-23 15:53:21 > This is a [DIRECTORY EXPLORE] request..
+2023-09-23 15:53:21 >> Explore the content under folder: sockets-udp-tcp
+2023-09-23 15:53:21 >>> Directory: .git
+2023-09-23 15:53:21 >>> Directory: .idea
+2023-09-23 15:53:21 >>> Directory: .vscode
+2023-09-23 15:53:21 >>> Directory: src
+2023-09-23 15:53:21 >>> Directory: target
+2023-09-23 15:53:21 >>> File: .gitignore
+2023-09-23 15:53:21 >>> File: README.md
+2023-09-23 15:53:21 >>> File: WebServerLogs.txt
+2023-09-23 15:53:21 >>> File: pom.xml
+2023-09-23 15:53:22 
+2023-09-23 15:53:22 Http Worker is working...
+2023-09-23 15:53:22 GET /images/folder.png HTTP/1.1
+2023-09-23 15:53:22 >> No such resource:/images/folder.png
+2023-09-23 15:53:22 
+2023-09-23 15:53:22 Http Worker is working...
+2023-09-23 15:53:22 Http Worker is working...
+2023-09-23 15:53:22 GET /images/text.png HTTP/1.1
+2023-09-23 15:53:22 GET /images/file.png HTTP/1.1
+2023-09-23 15:53:22 >> No such resource:/images/text.png
+2023-09-23 15:53:22 
+2023-09-23 15:53:22 Http Worker is working...
+2023-09-23 15:53:22 Http Worker is working...
+2023-09-23 15:53:22 GET /images/text.png HTTP/1.1
+2023-09-23 15:53:22 GET /images/file.png HTTP/1.1
+2023-09-23 15:53:22 >> No such resource:/images/text.png
+2023-09-23 15:53:22 
+2023-09-23 15:53:22 Http Worker is working...
+2023-09-23 15:53:22 GET /images/xml.png HTTP/1.1
+2023-09-23 15:53:22 >> No such resource:/images/xml.png
+2023-09-23 15:53:23 
+2023-09-23 15:53:23 Http Worker is working...
+2023-09-23 15:53:23 GET / HTTP/1.1
+2023-09-23 15:53:23 > This is a [DIRECTORY EXPLORE] request..
+2023-09-23 15:53:23 >> Explore the content under folder: sockets-udp-tcp
+2023-09-23 15:53:23 >>> Directory: .git
+2023-09-23 15:53:23 >>> Directory: .idea
+2023-09-23 15:53:23 >>> Directory: .vscode
+2023-09-23 15:53:23 >>> Directory: src
+2023-09-23 15:53:23 >>> Directory: target
+2023-09-23 15:53:23 >>> File: .gitignore
+2023-09-23 15:53:23 >>> File: README.md
+2023-09-23 15:53:23 >>> File: WebServerLogs.txt
+2023-09-23 15:53:23 >>> File: pom.xml
+2023-09-23 15:53:24 
+2023-09-23 15:53:24 Http Worker is working...
+2023-09-23 15:53:24 GET /images/folder.png HTTP/1.1
+2023-09-23 15:53:24 >> No such resource:/images/folder.png
+2023-09-23 15:53:24 
+2023-09-23 15:53:24 Http Worker is working...
+2023-09-23 15:53:24 GET /images/file.png HTTP/1.1
+2023-09-23 15:53:24 >> No such resource:/images/file.png
+2023-09-23 15:53:24 
+2023-09-23 15:53:24 Http Worker is working...
+2023-09-23 15:53:24 GET /images/xml.png HTTP/1.1
+2023-09-23 15:53:24 >> No such resource:/images/xml.png
+2023-09-23 15:53:24 
+2023-09-23 15:53:24 Http Worker is working...
+2023-09-23 15:53:24 GET /images/text.png HTTP/1.1
+2023-09-23 15:53:24 >> No such resource:/images/text.png
+2023-09-23 15:53:24 
+2023-09-23 15:53:24 Http Worker is working...
+2023-09-23 15:53:24 GET / HTTP/1.1
+2023-09-23 15:53:24 > This is a [DIRECTORY EXPLORE] request..
+2023-09-23 15:53:24 >> Explore the content under folder: sockets-udp-tcp
+2023-09-23 15:53:24 >>> Directory: .git
+2023-09-23 15:53:24 >>> Directory: .idea
+2023-09-23 15:53:24 >>> Directory: .vscode
+2023-09-23 15:53:24 >>> Directory: src
+2023-09-23 15:53:24 >>> Directory: target
+2023-09-23 15:53:24 >>> File: .gitignore
+2023-09-23 15:53:24 >>> File: README.md
+2023-09-23 15:53:24 >>> File: WebServerLogs.txt
+2023-09-23 15:53:24 >>> File: pom.xml
+2023-09-23 15:53:25 
+2023-09-23 15:53:25 Http Worker is working...
+2023-09-23 15:53:25 GET /images/folder.png HTTP/1.1
+2023-09-23 15:53:25 >> No such resource:/images/folder.png
+2023-09-23 15:53:26 
+2023-09-23 15:53:26 Http Worker is working...
+2023-09-23 15:53:26 GET /images/file.png HTTP/1.1
+2023-09-23 15:53:26 >> No such resource:/images/file.png
+2023-09-23 15:53:26 
+2023-09-23 15:53:26 Http Worker is working...
+2023-09-23 15:53:26 GET / HTTP/1.1
+2023-09-23 15:53:26 > This is a [DIRECTORY EXPLORE] request..
+2023-09-23 15:53:26 >> Explore the content under folder: sockets-udp-tcp
+2023-09-23 15:53:26 >>> Directory: .git
+2023-09-23 15:53:26 >>> Directory: .idea
+2023-09-23 15:53:26 >>> Directory: .vscode
+2023-09-23 15:53:26 >>> Directory: src
+2023-09-23 15:53:26 >>> Directory: target
+2023-09-23 15:53:26 >>> File: .gitignore
+2023-09-23 15:53:26 >>> File: README.md
+2023-09-23 15:53:26 >>> File: WebServerLogs.txt
+2023-09-23 15:53:26 >>> File: pom.xml
+2023-09-23 15:53:26 
+2023-09-23 15:53:26 Http Worker is working...
+2023-09-23 15:53:26 GET /images/xml.png HTTP/1.1
+2023-09-23 15:53:26 >> No such resource:/images/xml.png
+2023-09-23 15:53:26 
+2023-09-23 15:53:26 Http Worker is working...
+2023-09-23 15:53:26 GET /images/text.png HTTP/1.1
+2023-09-23 15:53:26 >> No such resource:/images/text.png
+2023-09-23 15:53:26 
+2023-09-23 15:53:26 Http Worker is working...
+2023-09-23 15:53:26 GET /images/folder.png HTTP/1.1
+2023-09-23 15:53:26 >> No such resource:/images/folder.png
+2023-09-23 15:53:27 
+2023-09-23 15:53:27 Http Worker is working...
+2023-09-23 15:53:27 GET /images/text.png HTTP/1.1
+2023-09-23 15:53:27 >> No such resource:/images/text.png
+2023-09-23 15:53:27 
+2023-09-23 15:53:27 Http Worker is working...
+2023-09-23 15:53:27 GET /images/file.png HTTP/1.1
+2023-09-23 15:53:27 >> No such resource:/images/file.png
+2023-09-23 15:53:27 
+2023-09-23 15:53:27 Http Worker is working...
+2023-09-23 15:53:27 GET /images/xml.png HTTP/1.1
+2023-09-23 15:53:27 >> No such resource:/images/xml.png
+2023-09-23 15:53:28 
+2023-09-23 15:53:28 Http Worker is working...
+2023-09-23 15:53:28 GET / HTTP/1.1
+2023-09-23 15:53:28 > This is a [DIRECTORY EXPLORE] request..
+2023-09-23 15:53:28 >> Explore the content under folder: sockets-udp-tcp
+2023-09-23 15:53:28 >>> Directory: .git
+2023-09-23 15:53:28 >>> Directory: .idea
+2023-09-23 15:53:28 >>> Directory: .vscode
+2023-09-23 15:53:28 >>> Directory: src
+2023-09-23 15:53:28 >>> Directory: target
+2023-09-23 15:53:28 >>> File: .gitignore
+2023-09-23 15:53:28 >>> File: README.md
+2023-09-23 15:53:28 >>> File: WebServerLogs.txt
+2023-09-23 15:53:28 >>> File: pom.xml
+2023-09-23 15:53:29 
+2023-09-23 15:53:29 Http Worker is working...
+2023-09-23 15:53:29 GET /images/text.png HTTP/1.1
+2023-09-23 15:53:29 >> No such resource:/images/text.png
+2023-09-23 15:53:29 
+2023-09-23 15:53:29 Http Worker is working...
+2023-09-23 15:53:29 GET /images/xml.png HTTP/1.1
+2023-09-23 15:53:29 Http Worker is working...
+2023-09-23 15:53:29 GET /images/file.png HTTP/1.1
+2023-09-23 15:53:29 >> No such resource:/images/file.png
+2023-09-23 15:53:29 
+2023-09-23 15:53:29 Http Worker is working...
+2023-09-23 15:53:29 GET /images/xml.png HTTP/1.1
+2023-09-23 15:53:29 Http Worker is working...
+2023-09-23 15:53:29 GET /images/file.png HTTP/1.1
+2023-09-23 15:53:29 >> No such resource:/images/file.png
+2023-09-23 15:53:29 >> No such resource:/images/xml.png
+2023-09-23 15:53:29 
+2023-09-23 15:53:29 Http Worker is working...
+2023-09-23 15:53:29 GET /images/folder.png HTTP/1.1
+2023-09-23 15:53:29 >> No such resource:/images/folder.png
+2023-09-23 15:53:36 
+2023-09-23 15:53:36 Http Worker is working...
+2023-09-23 15:53:36 GET /WebServerLogs.txt HTTP/1.1
+2023-09-23 15:53:36 > This is a [SINGLE FILE] request..
+2023-09-23 15:53:36 >> Seek the content of file: WebServerLogs.txt
+2023-09-23 15:57:50 
+2023-09-23 15:57:50 Http Worker is working...
+2023-09-23 15:57:50 GET / HTTP/1.1
+2023-09-23 15:57:50 > This is a [DIRECTORY EXPLORE] request..
+2023-09-23 15:57:50 >> Explore the content under folder: sockets-udp-tcp
+2023-09-23 15:57:50 >>> Directory: .git
+2023-09-23 15:57:50 >>> Directory: .idea
+2023-09-23 15:57:50 >>> Directory: .vscode
+2023-09-23 15:57:50 >>> Directory: src
+2023-09-23 15:57:50 >>> Directory: target
+2023-09-23 15:57:50 >>> File: .gitignore
+2023-09-23 15:57:50 >>> File: README.md
+2023-09-23 15:57:50 >>> File: WebServerLogs.txt
+2023-09-23 15:57:50 >>> File: pom.xml
+2023-09-23 15:57:51 
+2023-09-23 15:57:51 >> No such resource:/images/folder.png
+2023-09-23 15:57:51 Http Worker is working...
+2023-09-23 15:57:51 GET /images/file.png HTTP/1.1
+2023-09-23 15:57:51 
+2023-09-23 15:57:51 Http Worker is working...
+2023-09-23 15:57:51 >> No such resource:/images/file.png
+2023-09-23 15:57:51 GET /images/text.png HTTP/1.1
+2023-09-23 15:57:51 
+2023-09-23 15:57:51 Http Worker is working...
+2023-09-23 15:57:51 >> No such resource:/images/file.png
+2023-09-23 15:57:51 GET /images/text.png HTTP/1.1
+2023-09-23 15:57:51 >> No such resource:/images/text.png
+2023-09-23 15:57:51 
+2023-09-23 15:57:51 Http Worker is working...
+2023-09-23 15:57:51 GET /images/xml.png HTTP/1.1
+2023-09-23 15:57:51 >> No such resource:/images/xml.png
+2023-09-23 15:58:59 
+2023-09-23 15:58:59 Http Worker is working...
+2023-09-23 15:58:59 GET /favicon.ico HTTP/1.1
+2023-09-23 15:58:59 >> No such resource:/favicon.ico
+2023-09-23 15:59:04 
+2023-09-23 15:59:04 Http Worker is working...
+2023-09-23 15:59:04 GET / HTTP/1.1
+2023-09-23 15:59:04 > This is a [DIRECTORY EXPLORE] request..
+2023-09-23 15:59:04 >> Explore the content under folder: sockets-udp-tcp
+2023-09-23 15:59:04 >>> Directory: .git
+2023-09-23 15:59:04 >>> Directory: .idea
+2023-09-23 15:59:04 >>> Directory: .vscode
+2023-09-23 15:59:04 >>> Directory: src
+2023-09-23 15:59:04 >>> Directory: target
+2023-09-23 15:59:04 >>> File: .gitignore
+2023-09-23 15:59:04 >>> File: README.md
+2023-09-23 15:59:04 >>> File: WebServerLogs.txt
+2023-09-23 15:59:04 >>> File: pom.xml
+2023-09-23 15:59:05 
+2023-09-23 15:59:05 >> No such resource:/images/text.png
+2023-09-23 15:59:05 Http Worker is working...
+2023-09-23 15:59:05 GET /images/xml.png HTTP/1.1
+2023-09-23 15:59:05 >> No such resource:/images/xml.png
+2023-09-23 15:59:05 
+2023-09-23 15:59:05 Http Worker is working...
+2023-09-23 15:59:05 GET /images/file.png HTTP/1.1
+2023-09-23 15:59:05 >> No such resource:/images/file.png
+2023-09-23 15:59:05 
+2023-09-23 15:59:05 Http Worker is working...
+2023-09-23 15:59:05 GET /images/folder.png HTTP/1.1
+2023-09-23 15:59:05 >> No such resource:/images/folder.png
+2023-09-23 15:59:06 
+2023-09-23 15:59:06 Http Worker is working...
+2023-09-23 15:59:06 GET /favicon.ico HTTP/1.1
+2023-09-23 15:59:06 >> No such resource:/favicon.ico
+2023-09-23 15:59:10 
+2023-09-23 15:59:10 Http Worker is working...
+2023-09-23 15:59:10 GET /README.md HTTP/1.1
+2023-09-23 15:59:10 > This is a [SINGLE FILE] request..
+2023-09-23 15:59:10 >> Seek the content of file: README.md
+2023-09-23 15:59:13 
+2023-09-23 15:59:13 Http Worker is working...
+2023-09-23 15:59:13 GET / HTTP/1.1
+2023-09-23 15:59:13 > This is a [DIRECTORY EXPLORE] request..
+2023-09-23 15:59:13 >> Explore the content under folder: sockets-udp-tcp
+2023-09-23 15:59:13 >>> Directory: .git
+2023-09-23 15:59:13 >>> Directory: .idea
+2023-09-23 15:59:13 >>> Directory: .vscode
+2023-09-23 15:59:13 >>> Directory: src
+2023-09-23 15:59:13 >>> Directory: target
+2023-09-23 15:59:13 >>> File: .gitignore
+2023-09-23 15:59:13 >>> File: README.md
+2023-09-23 15:59:13 >>> File: WebServerLogs.txt
+2023-09-23 15:59:13 >>> File: pom.xml
+2023-09-23 15:59:34 
+2023-09-23 15:59:34 Http Worker is working...
+2023-09-23 15:59:34 GET /src HTTP/1.1
+2023-09-23 15:59:34 > This is a [DIRECTORY EXPLORE] request..
+2023-09-23 15:59:34 >> Explore the content under folder: src
+2023-09-23 15:59:34 >>> Directory: main
+2023-09-23 15:59:35 
+2023-09-23 15:59:35 Http Worker is working...
+2023-09-23 15:59:35 GET /images/folder.png HTTP/1.1
+2023-09-23 15:59:35 >> No such resource:/images/folder.png
+2023-09-23 15:59:37 
+2023-09-23 15:59:37 Http Worker is working...
+2023-09-23 15:59:37 GET /src/main HTTP/1.1
+2023-09-23 15:59:37 > This is a [DIRECTORY EXPLORE] request..
+2023-09-23 15:59:37 >> Explore the content under folder: main
+2023-09-23 15:59:37 >>> Directory: java
+2023-09-23 15:59:38 
+2023-09-23 15:59:38 Http Worker is working...
+2023-09-23 15:59:38 GET /src/main/java HTTP/1.1
+2023-09-23 15:59:38 > This is a [DIRECTORY EXPLORE] request..
+2023-09-23 15:59:38 >> Explore the content under folder: java
+2023-09-23 15:59:38 >>> Directory: org
+2023-09-23 15:59:39 
+2023-09-23 15:59:39 Http Worker is working...
+2023-09-23 15:59:39 GET /images/folder.png HTTP/1.1
+2023-09-23 15:59:39 >> No such resource:/images/folder.png
+2023-09-23 15:59:40 
+2023-09-23 15:59:40 Http Worker is working...
+2023-09-23 15:59:40 GET /src/main/java/org HTTP/1.1
+2023-09-23 15:59:40 > This is a [DIRECTORY EXPLORE] request..
+2023-09-23 15:59:40 >> Explore the content under folder: org
+2023-09-23 15:59:40 >>> Directory: example
+2023-09-23 15:59:41 
+2023-09-23 15:59:41 Http Worker is working...
+2023-09-23 15:59:41 GET /images/folder.png HTTP/1.1
+2023-09-23 15:59:41 >> No such resource:/images/folder.png
+2023-09-23 15:59:41 
+2023-09-23 15:59:41 Http Worker is working...
+2023-09-23 15:59:41 GET /src/main/java/org/example HTTP/1.1
+2023-09-23 15:59:41 > This is a [DIRECTORY EXPLORE] request..
+2023-09-23 15:59:41 >> Explore the content under folder: example
+2023-09-23 15:59:41 >>> File: HttpWorker.java
+2023-09-23 15:59:41 >>> File: LogUtil.java
+2023-09-23 15:59:41 >>> File: Main.java
+2023-09-23 15:59:41 >>> File: SimpleHTTPServer.java
+2023-09-23 15:59:41 >>> File: ToUpperWebsocket.java
+2023-09-23 15:59:41 >>> File: WebServer.java
+2023-09-23 15:59:41 >>> File: WebSocket.java
+2023-09-23 15:59:42 
+2023-09-23 15:59:42 Http Worker is working...
+2023-09-23 15:59:42 GET /images/java.png HTTP/1.1
+2023-09-23 15:59:42 >> No such resource:/images/java.png
+2023-09-23 15:59:43 
+2023-09-23 15:59:43 Http Worker is working...
+2023-09-23 15:59:43 GET /images/folder.png HTTP/1.1
+2023-09-23 15:59:43 >> No such resource:/images/folder.png
+2023-09-23 15:59:45 
+2023-09-23 15:59:45 Http Worker is working...
+2023-09-23 15:59:45 GET /src/main/java/org HTTP/1.1
+2023-09-23 15:59:45 > This is a [DIRECTORY EXPLORE] request..
+2023-09-23 15:59:45 >> Explore the content under folder: org
+2023-09-23 15:59:45 >>> Directory: example
+2023-09-23 15:59:46 
+2023-09-23 15:59:46 Http Worker is working...
+2023-09-23 15:59:46 GET /images/folder.png HTTP/1.1
+2023-09-23 15:59:46 >> No such resource:/images/folder.png
+2023-09-23 15:59:47 
+2023-09-23 15:59:47 Http Worker is working...
+2023-09-23 15:59:47 GET /src/main/java HTTP/1.1
+2023-09-23 15:59:47 > This is a [DIRECTORY EXPLORE] request..
+2023-09-23 15:59:47 >> Explore the content under folder: java
+2023-09-23 15:59:47 >>> Directory: org
+2023-09-23 15:59:48 
+2023-09-23 15:59:48 Http Worker is working...
+2023-09-23 15:59:48 GET /images/folder.png HTTP/1.1
+2023-09-23 15:59:48 >> No such resource:/images/folder.png
+2023-09-23 15:59:50 
+2023-09-23 15:59:50 Http Worker is working...
+2023-09-23 15:59:50 GET /src/main HTTP/1.1
+2023-09-23 15:59:50 > This is a [DIRECTORY EXPLORE] request..
+2023-09-23 15:59:50 >> Explore the content under folder: main
+2023-09-23 15:59:50 >>> Directory: java
+2023-09-23 15:59:51 
+2023-09-23 15:59:51 Http Worker is working...
+2023-09-23 15:59:51 GET /images/folder.png HTTP/1.1
+2023-09-23 15:59:51 >> No such resource:/images/folder.png
+2023-09-23 15:59:52 
+2023-09-23 15:59:52 Http Worker is working...
+2023-09-23 15:59:52 GET /src HTTP/1.1
+2023-09-23 15:59:52 > This is a [DIRECTORY EXPLORE] request..
+2023-09-23 15:59:52 >> Explore the content under folder: src
+2023-09-23 15:59:52 >>> Directory: main
+2023-09-23 15:59:53 
+2023-09-23 15:59:53 Http Worker is working...
+2023-09-23 15:59:53 GET /images/folder.png HTTP/1.1
+2023-09-23 15:59:53 >> No such resource:/images/folder.png
+2023-09-23 16:04:13 
+2023-09-23 16:04:13 Http Worker is working...
+2023-09-23 16:04:13 GET / HTTP/1.1
+2023-09-23 16:04:13 > This is a [DIRECTORY EXPLORE] request..
+2023-09-23 16:04:13 >> Explore the content under folder: sockets-udp-tcp
+2023-09-23 16:04:13 >>> Directory: .git
+2023-09-23 16:04:13 >>> Directory: .idea
+2023-09-23 16:04:13 >>> Directory: .vscode
+2023-09-23 16:04:13 >>> Directory: src
+2023-09-23 16:04:13 >>> Directory: target
+2023-09-23 16:04:13 >>> File: .gitignore
+2023-09-23 16:04:13 >>> File: README.md
+2023-09-23 16:04:13 >>> File: WebServerLogs.txt
+2023-09-23 16:04:13 >>> File: pom.xml
+2023-09-23 16:05:46 
+2023-09-23 16:05:46 Http Worker is working...
+2023-09-23 16:05:46 GET / HTTP/1.1
+2023-09-23 16:05:46 > This is a [DIRECTORY EXPLORE] request..
+2023-09-23 16:05:46 >> Explore the content under folder: sockets-udp-tcp
+2023-09-23 16:05:46 >>> Directory: .git
+2023-09-23 16:05:46 >>> Directory: .idea
+2023-09-23 16:05:46 >>> Directory: .vscode
+2023-09-23 16:05:46 >>> Directory: src
+2023-09-23 16:05:46 >>> Directory: target
+2023-09-23 16:05:46 >>> File: .gitignore
+2023-09-23 16:05:46 >>> File: README.md
+2023-09-23 16:05:46 >>> File: WebServerLogs.txt
+2023-09-23 16:05:46 >>> File: pom.xml
+2023-09-23 16:05:47 
+2023-09-23 16:05:47 Http Worker is working...
+2023-09-23 16:05:47 GET /images/file.png HTTP/1.1
+2023-09-23 16:05:47 >> No such resource:/images/file.png
+2023-09-23 16:05:47 
+2023-09-23 16:05:47 Http Worker is working...
+2023-09-23 16:05:47 GET /images/file.png HTTP/1.1
+2023-09-23 16:05:47 >> No such resource:/images/file.png
+2023-09-23 16:05:47 >> No such resource:/images/xml.png
+2023-09-23 16:05:47 
+2023-09-23 16:05:47 Http Worker is working...
+2023-09-23 16:05:47 GET /images/folder.png HTTP/1.1
+2023-09-23 16:05:47 >> No such resource:/images/folder.png
+2023-09-23 16:05:47 
+2023-09-23 16:05:47 Http Worker is working...
+2023-09-23 16:05:47 GET /images/text.png HTTP/1.1
+2023-09-23 16:05:47 >> No such resource:/images/text.png
+2023-09-23 16:05:49 
+2023-09-23 16:05:49 Http Worker is working...
+2023-09-23 16:05:49 GET /WebServerLogs.txt HTTP/1.1
+2023-09-23 16:05:49 > This is a [SINGLE FILE] request..
+2023-09-23 16:05:49 >> Seek the content of file: WebServerLogs.txt
+2023-09-23 16:11:05 
+2023-09-23 16:11:05 Http Worker is working...
+2023-09-23 16:11:05 GET /src/main/java/org/example HTTP/1.1
+2023-09-23 16:11:05 > This is a [DIRECTORY EXPLORE] request..
+2023-09-23 16:11:05 >> Explore the content under folder: example
+2023-09-23 16:11:05 >>> File: HttpWorker.java
+2023-09-23 16:11:05 >>> File: LogUtil.java
+2023-09-23 16:11:05 >>> File: Main.java
+2023-09-23 16:11:05 >>> File: SimpleHTTPServer.java
+2023-09-23 16:11:05 >>> File: ToUpperWebsocket.java
+2023-09-23 16:11:05 >>> File: WebServer.java
+2023-09-23 16:11:05 >>> File: WebSocket.java
+2023-09-23 16:11:05 
+2023-09-23 16:11:05 Http Worker is working...
+2023-09-23 16:11:05 GET /images/folder.png HTTP/1.1
+2023-09-23 16:11:05 >> No such resource:/images/folder.png
+2023-09-23 16:11:05 
+2023-09-23 16:11:05 Http Worker is working...
+2023-09-23 16:11:05 GET /images/java.png HTTP/1.1
+2023-09-23 16:11:05 >> No such resource:/images/java.png
+2023-09-23 16:11:05 
+2023-09-23 16:11:05 Http Worker is working...
+2023-09-23 16:11:05 GET /favicon.ico HTTP/1.1
+2023-09-23 16:11:05 >> No such resource:/favicon.ico
+2023-09-23 16:12:47 
+2023-09-23 16:12:47 Http Worker is working...
+2023-09-23 16:12:47 GET /src/main/java/org/example HTTP/1.1
+2023-09-23 16:12:47 > This is a [DIRECTORY EXPLORE] request..
+2023-09-23 16:12:47 >> Explore the content under folder: example
+2023-09-23 16:12:47 >>> File: HttpWorker.java
+2023-09-23 16:12:47 >>> File: LogUtil.java
+2023-09-23 16:12:47 >>> File: Main.java
+2023-09-23 16:12:47 >>> File: SimpleHTTPServer.java
+2023-09-23 16:12:47 >>> File: ToUpperWebsocket.java
+2023-09-23 16:12:47 >>> File: WebServer.java
+2023-09-23 16:12:47 >>> File: WebSocket.java
+2023-09-23 16:12:47 >>> File: teste.html
+2023-09-23 16:12:47 
+2023-09-23 16:12:47 Http Worker is working...
+2023-09-23 16:12:47 GET /images/html.png HTTP/1.1
+2023-09-23 16:12:47 >> No such resource:/images/folder.png
+2023-09-23 16:12:47 
+2023-09-23 16:12:47 Http Worker is working...
+2023-09-23 16:12:47 GET /images/html.png HTTP/1.1
+2023-09-23 16:12:47 >> No such resource:/images/folder.png
+2023-09-23 16:12:47 >> No such resource:/images/html.png
+2023-09-23 16:12:47 
+2023-09-23 16:12:47 Http Worker is working...
+2023-09-23 16:12:47 GET /images/java.png HTTP/1.1
+2023-09-23 16:12:47 >> No such resource:/images/java.png
+2023-09-23 16:12:47 
+2023-09-23 16:12:47 Http Worker is working...
+2023-09-23 16:12:47 GET /favicon.ico HTTP/1.1
+2023-09-23 16:12:47 >> No such resource:/favicon.ico
+2023-09-23 16:12:54 
+2023-09-23 16:12:54 Http Worker is working...
+2023-09-23 16:12:54 GET /src/main/java/org/example/teste.html HTTP/1.1
+2023-09-23 16:12:54 > This is a [SINGLE FILE] request..
+2023-09-23 16:12:54 >> Seek the content of file: teste.html
+2023-09-23 16:12:55 
+2023-09-23 16:12:55 Http Worker is working...
+2023-09-23 16:12:55 GET /favicon.ico HTTP/1.1
+2023-09-23 16:12:55 >> No such resource:/favicon.ico
+2023-09-23 16:13:17 
+2023-09-23 16:13:17 Http Worker is working...
+2023-09-23 16:13:17 GET / HTTP/1.1
+2023-09-23 16:13:17 > This is a [DIRECTORY EXPLORE] request..
+2023-09-23 16:13:17 >> Explore the content under folder: sockets-udp-tcp
+2023-09-23 16:13:17 >>> Directory: .git
+2023-09-23 16:13:17 >>> Directory: .idea
+2023-09-23 16:13:17 >>> Directory: .vscode
+2023-09-23 16:13:17 >>> Directory: src
+2023-09-23 16:13:17 >>> Directory: target
+2023-09-23 16:13:17 >>> File: .gitignore
+2023-09-23 16:13:17 >>> File: README.md
+2023-09-23 16:13:17 >>> File: WebServerLogs.txt
+2023-09-23 16:13:17 >>> File: pom.xml
+2023-09-23 16:13:18 
+2023-09-23 16:13:18 Http Worker is working...
+2023-09-23 16:13:18 GET / HTTP/1.1
+2023-09-23 16:13:18 > This is a [DIRECTORY EXPLORE] request..
+2023-09-23 16:13:18 >> Explore the content under folder: sockets-udp-tcp
+2023-09-23 16:13:18 >>> Directory: .git
+2023-09-23 16:13:18 >>> Directory: .idea
+2023-09-23 16:13:18 >>> Directory: .vscode
+2023-09-23 16:13:18 >>> Directory: src
+2023-09-23 16:13:18 >>> Directory: target
+2023-09-23 16:13:18 >>> File: .gitignore
+2023-09-23 16:13:18 >>> File: README.md
+2023-09-23 16:13:18 >>> File: WebServerLogs.txt
+2023-09-23 16:13:18 >>> File: pom.xml
+2023-09-23 16:13:19 
+2023-09-23 16:13:19 Http Worker is working...
+2023-09-23 16:13:19 GET /images/file.png HTTP/1.1
+2023-09-23 16:13:19 >> No such resource:/images/file.png
+2023-09-23 16:13:19 
+2023-09-23 16:13:19 Http Worker is working...
+2023-09-23 16:13:19 GET /images/folder.png HTTP/1.1
+2023-09-23 16:13:19 >> No such resource:/images/folder.png
+2023-09-23 16:13:19 >> No such resource:/images/xml.png
+2023-09-23 16:13:19 
+2023-09-23 16:13:19 Http Worker is working...
+2023-09-23 16:13:19 GET /images/folder.png HTTP/1.1
+2023-09-23 16:13:19 >> No such resource:/images/folder.png
+2023-09-23 16:13:19 >> No such resource:/images/xml.png
+2023-09-23 16:13:20 
+2023-09-23 16:13:20 Http Worker is working...
+2023-09-23 16:13:20 GET /images/text.png HTTP/1.1
+2023-09-23 16:13:20 >> No such resource:/images/text.png
+2023-09-23 16:13:21 
+2023-09-23 16:13:21 Http Worker is working...
+2023-09-23 16:13:21 GET /WebServerLogs.txt HTTP/1.1
+2023-09-23 16:13:21 > This is a [SINGLE FILE] request..
+2023-09-23 16:13:21 >> Seek the content of file: WebServerLogs.txt
+2023-09-23 16:13:45 
+2023-09-23 16:13:45 Http Worker is working...
+2023-09-23 16:13:45 GET /src/main/java/org/example/teste.html HTTP/1.1
+2023-09-23 16:13:45 > This is a [SINGLE FILE] request..
+2023-09-23 16:13:45 >> Seek the content of file: teste.html
+2023-09-23 16:13:45 
+2023-09-23 16:13:45 Http Worker is working...
+2023-09-23 16:13:45 GET /favicon.ico HTTP/1.1
+2023-09-23 16:13:45 >> No such resource:/favicon.ico
+2023-09-23 16:13:51 
+2023-09-23 16:13:51 Http Worker is working...
+2023-09-23 16:13:51 GET /WebServerLogs.txt HTTP/1.1
+2023-09-23 16:13:51 > This is a [SINGLE FILE] request..
+2023-09-23 16:13:51 >> Seek the content of file: WebServerLogs.txt
+2023-09-23 16:16:05 
+2023-09-23 16:16:05 Http Worker is working...
+2023-09-23 16:16:05 GET /favicon.ico HTTP/1.1
+2023-09-23 16:16:05 >> No such resource:/favicon.ico
+2023-09-23 16:16:07 
+2023-09-23 16:16:07 Http Worker is working...
+2023-09-23 16:16:07 GET /src/main/java/org/example HTTP/1.1
+2023-09-23 16:16:07 > This is a [DIRECTORY EXPLORE] request..
+2023-09-23 16:16:07 >> Explore the content under folder: example
+2023-09-23 16:16:07 >>> Directory: aplication
+2023-09-23 16:16:07 >>> Directory: socket
+2023-09-23 16:16:07 >>> File: Main.java
+2023-09-23 16:16:07 
+2023-09-23 16:16:07 Http Worker is working...
+2023-09-23 16:16:07 GET /images/folder.png HTTP/1.1
+2023-09-23 16:16:07 >> No such resource:/images/folder.png
+2023-09-23 16:16:07 
+2023-09-23 16:16:07 Http Worker is working...
+2023-09-23 16:16:07 GET /images/folder.png HTTP/1.1
+2023-09-23 16:16:07 >> No such resource:/images/folder.png
+2023-09-23 16:16:07 
+2023-09-23 16:16:07 Http Worker is working...
+2023-09-23 16:16:07 GET /favicon.ico HTTP/1.1
+2023-09-23 16:16:07 >> No such resource:/favicon.ico
+2023-09-23 16:16:10 
+2023-09-23 16:16:10 Http Worker is working...
+2023-09-23 16:16:10 GET /src/main/java/org/example/socket HTTP/1.1
+2023-09-23 16:16:10 > This is a [DIRECTORY EXPLORE] request..
+2023-09-23 16:16:10 >> Explore the content under folder: socket
+2023-09-23 16:16:10 >>> File: HttpWorker.java
+2023-09-23 16:16:10 >>> File: LogUtil.java
+2023-09-23 16:16:10 >>> File: WebServer.java
+2023-09-23 16:16:10 
+2023-09-23 16:16:10 Http Worker is working...
+2023-09-23 16:16:10 GET /images/folder.png HTTP/1.1
+2023-09-23 16:16:10 >> No such resource:/images/folder.png
+2023-09-23 16:16:10 
+2023-09-23 16:16:10 Http Worker is working...
+2023-09-23 16:16:10 GET /images/java.png HTTP/1.1
+2023-09-23 16:16:10 >> No such resource:/images/java.png
+2023-09-23 16:16:10 
+2023-09-23 16:16:10 Http Worker is working...
+2023-09-23 16:16:10 GET /favicon.ico HTTP/1.1
+2023-09-23 16:16:10 >> No such resource:/favicon.ico
+2023-09-23 16:16:20 
+2023-09-23 16:16:20 Http Worker is working...
+2023-09-23 16:16:20 GET /src/main/java/org/example HTTP/1.1
+2023-09-23 16:16:20 > This is a [DIRECTORY EXPLORE] request..
+2023-09-23 16:16:20 >> Explore the content under folder: example
+2023-09-23 16:16:20 >>> Directory: aplication
+2023-09-23 16:16:20 >>> Directory: socket
+2023-09-23 16:16:20 >>> File: Main.java
+2023-09-23 16:16:20 
+2023-09-23 16:16:20 Http Worker is working...
+2023-09-23 16:16:20 GET /images/java.png HTTP/1.1
+2023-09-23 16:16:20 >> No such resource:/images/java.png
+2023-09-23 16:16:20 
+2023-09-23 16:16:20 Http Worker is working...
+2023-09-23 16:16:20 GET /images/java.png HTTP/1.1
+2023-09-23 16:16:20 >> No such resource:/images/java.png
+2023-09-23 16:16:20 >> No such resource:/images/folder.png
+2023-09-23 16:16:20 
+2023-09-23 16:16:20 Http Worker is working...
+2023-09-23 16:16:20 GET /favicon.ico HTTP/1.1
+2023-09-23 16:16:20 >> No such resource:/favicon.ico
+2023-09-23 16:16:21 
+2023-09-23 16:16:21 Http Worker is working...
+2023-09-23 16:16:21 GET /src/main/java/org/example/aplication HTTP/1.1
+2023-09-23 16:16:21 > This is a [DIRECTORY EXPLORE] request..
+2023-09-23 16:16:21 >> Explore the content under folder: aplication
+2023-09-23 16:16:21 >>> File: teste.html
+2023-09-23 16:16:21 
+2023-09-23 16:16:21 Http Worker is working...
+2023-09-23 16:16:21 GET /images/html.png HTTP/1.1
+2023-09-23 16:16:21 >> No such resource:/images/html.png
+2023-09-23 16:16:21 
+2023-09-23 16:16:21 Http Worker is working...
+2023-09-23 16:16:21 GET /images/html.png HTTP/1.1
+2023-09-23 16:16:21 >> No such resource:/images/html.png
+2023-09-23 16:16:21 >> No such resource:/images/folder.png
+2023-09-23 16:16:21 
+2023-09-23 16:16:21 Http Worker is working...
+2023-09-23 16:16:21 GET /favicon.ico HTTP/1.1
+2023-09-23 16:16:21 >> No such resource:/favicon.ico
+2023-09-23 16:16:22 
+2023-09-23 16:16:22 Http Worker is working...
+2023-09-23 16:16:22 GET /src/main/java/org/example/aplication/teste.html HTTP/1.1
+2023-09-23 16:16:22 > This is a [SINGLE FILE] request..
+2023-09-23 16:16:22 >> Seek the content of file: teste.html
+2023-09-23 16:16:22 
+2023-09-23 16:16:22 Http Worker is working...
+2023-09-23 16:16:22 GET /favicon.ico HTTP/1.1
+2023-09-23 16:16:22 >> No such resource:/favicon.ico
+2023-09-23 16:16:28 
+2023-09-23 16:16:28 Http Worker is working...
+2023-09-23 16:16:28 GET /websocket/toUpper HTTP/1.1
+2023-09-23 16:16:28 > This is a [DIRECTORY EXPLORE] request..
+2023-09-23 16:16:28 >> No such resource:/websocket/toUpper
+2023-09-23 16:16:36 
+2023-09-23 16:16:36 Http Worker is working...
+2023-09-23 16:16:36 GET /websocket/toUpper HTTP/1.1
+2023-09-23 16:16:36 > This is a [DIRECTORY EXPLORE] request..
+2023-09-23 16:16:36 >> No such resource:/websocket/toUpper
+2023-09-23 16:19:55 
+2023-09-23 16:19:55 Http Worker is working...
+2023-09-23 16:19:55 GET /favicon.ico HTTP/1.1
+2023-09-23 16:19:55 >> No such resource:/favicon.ico
+2023-09-23 16:19:57 
+2023-09-23 16:19:57 Http Worker is working...
+2023-09-23 16:19:57 GET / HTTP/1.1
+2023-09-23 16:19:57 > This is a [DIRECTORY EXPLORE] request..
+2023-09-23 16:19:57 >> Explore the content under folder: sockets-udp-tcp
+2023-09-23 16:19:57 >>> Directory: .git
+2023-09-23 16:19:57 >>> Directory: .idea
+2023-09-23 16:19:57 >>> Directory: .vscode
+2023-09-23 16:19:57 >>> Directory: src
+2023-09-23 16:19:57 >>> Directory: target
+2023-09-23 16:19:57 >>> File: .gitignore
+2023-09-23 16:19:57 >>> File: README.md
+2023-09-23 16:19:57 >>> File: WebServerLogs.txt
+2023-09-23 16:19:57 >>> File: pom.xml
+2023-09-23 16:19:58 
+2023-09-23 16:19:58 Http Worker is working...
+2023-09-23 16:19:58 GET /images/xml.png HTTP/1.1
+2023-09-23 16:19:58 >> No such resource:/images/xml.png
+2023-09-23 16:19:58 
+2023-09-23 16:19:58 Http Worker is working...
+2023-09-23 16:19:58 GET /images/text.png HTTP/1.1
+2023-09-23 16:19:58 >> No such resource:/images/text.png
+2023-09-23 16:19:58 
+2023-09-23 16:19:58 Http Worker is working...
+2023-09-23 16:19:58 GET /images/folder.png HTTP/1.1
+2023-09-23 16:19:58 >> No such resource:/images/folder.png
+2023-09-23 16:19:58 
+2023-09-23 16:19:58 Http Worker is working...
+2023-09-23 16:19:58 GET /images/file.png HTTP/1.1
+2023-09-23 16:19:58 >> No such resource:/images/file.png
+2023-09-23 16:19:59 
+2023-09-23 16:19:59 Http Worker is working...
+2023-09-23 16:19:59 GET /favicon.ico HTTP/1.1
+2023-09-23 16:19:59 >> No such resource:/favicon.ico
+2023-09-23 16:20:21 
+2023-09-23 16:20:21 Http Worker is working...
+2023-09-23 16:20:21 GET /src HTTP/1.1
+2023-09-23 16:20:21 > This is a [DIRECTORY EXPLORE] request..
+2023-09-23 16:20:21 >> Explore the content under folder: src
+2023-09-23 16:20:21 >>> Directory: main
+2023-09-23 16:20:22 
+2023-09-23 16:20:22 Http Worker is working...
+2023-09-23 16:20:22 GET /images/folder.png HTTP/1.1
+2023-09-23 16:20:22 >> No such resource:/images/folder.png
+2023-09-23 16:20:23 
+2023-09-23 16:20:23 Http Worker is working...
+2023-09-23 16:20:23 GET /favicon.ico HTTP/1.1
+2023-09-23 16:20:23 >> No such resource:/favicon.ico
+2023-09-23 16:20:26 
+2023-09-23 16:20:26 Http Worker is working...
+2023-09-23 16:20:26 GET /src/main HTTP/1.1
+2023-09-23 16:20:26 > This is a [DIRECTORY EXPLORE] request..
+2023-09-23 16:20:26 >> Explore the content under folder: main
+2023-09-23 16:20:26 >>> Directory: java
+2023-09-23 16:20:27 
+2023-09-23 16:20:27 Http Worker is working...
+2023-09-23 16:20:27 GET /images/folder.png HTTP/1.1
+2023-09-23 16:20:27 >> No such resource:/images/folder.png
+2023-09-23 16:20:28 
+2023-09-23 16:20:28 Http Worker is working...
+2023-09-23 16:20:28 GET /favicon.ico HTTP/1.1
+2023-09-23 16:20:28 >> No such resource:/favicon.ico
+2023-09-23 16:20:32 
+2023-09-23 16:20:32 Http Worker is working...
+2023-09-23 16:20:32 GET /src/main/java HTTP/1.1
+2023-09-23 16:20:32 > This is a [DIRECTORY EXPLORE] request..
+2023-09-23 16:20:32 >> Explore the content under folder: java
+2023-09-23 16:20:32 >>> Directory: org
+2023-09-23 16:20:33 
+2023-09-23 16:20:33 Http Worker is working...
+2023-09-23 16:20:33 GET /images/folder.png HTTP/1.1
+2023-09-23 16:20:33 >> No such resource:/images/folder.png
+2023-09-23 16:20:33 
+2023-09-23 16:20:33 Http Worker is working...
+2023-09-23 16:20:33 GET /src/main/java/org HTTP/1.1
+2023-09-23 16:20:33 > This is a [DIRECTORY EXPLORE] request..
+2023-09-23 16:20:33 >> Explore the content under folder: org
+2023-09-23 16:20:33 >>> Directory: example
+2023-09-23 16:20:34 
+2023-09-23 16:20:34 Http Worker is working...
+2023-09-23 16:20:34 GET /images/folder.png HTTP/1.1
+2023-09-23 16:20:34 >> No such resource:/images/folder.png
+2023-09-23 16:20:34 
+2023-09-23 16:20:34 Http Worker is working...
+2023-09-23 16:20:34 GET /src/main/java/org/example HTTP/1.1
+2023-09-23 16:20:34 > This is a [DIRECTORY EXPLORE] request..
+2023-09-23 16:20:34 >> Explore the content under folder: example
+2023-09-23 16:20:34 >>> Directory: aplication
+2023-09-23 16:20:34 >>> Directory: socket
+2023-09-23 16:20:34 >>> File: Main.java
+2023-09-23 16:20:35 
+2023-09-23 16:20:35 Http Worker is working...
+2023-09-23 16:20:35 GET /favicon.ico HTTP/1.1
+2023-09-23 16:20:35 >> No such resource:/favicon.ico
+2023-09-23 16:20:35 
+2023-09-23 16:20:35 Http Worker is working...
+2023-09-23 16:20:35 GET /images/folder.png HTTP/1.1
+2023-09-23 16:20:35 >> No such resource:/images/folder.png
+2023-09-23 16:20:36 
+2023-09-23 16:20:36 Http Worker is working...
+2023-09-23 16:20:36 GET /images/java.png HTTP/1.1
+2023-09-23 16:20:36 >> No such resource:/images/java.png
+2023-09-23 16:20:36 
+2023-09-23 16:20:36 Http Worker is working...
+2023-09-23 16:20:36 GET /favicon.ico HTTP/1.1
+2023-09-23 16:20:36 >> No such resource:/favicon.ico
+2023-09-23 16:20:37 
+2023-09-23 16:20:37 Http Worker is working...
+2023-09-23 16:20:37 GET /src/main/java/org/example/Main.java HTTP/1.1
+2023-09-23 16:20:37 > This is a [SINGLE FILE] request..
+2023-09-23 16:20:37 >> Seek the content of file: Main.java
+2023-09-23 16:20:38 
+2023-09-23 16:20:38 Http Worker is working...
+2023-09-23 16:20:38 GET /favicon.ico HTTP/1.1
+2023-09-23 16:20:38 >> No such resource:/favicon.ico
+2023-09-23 16:20:40 
+2023-09-23 16:20:40 Http Worker is working...
+2023-09-23 16:20:40 GET /favicon.ico HTTP/1.1
+2023-09-23 16:20:40 >> No such resource:/favicon.ico
+2023-09-23 16:20:42 
+2023-09-23 16:20:42 Http Worker is working...
+2023-09-23 16:20:42 GET /favicon.ico HTTP/1.1
+2023-09-23 16:20:42 >> No such resource:/favicon.ico
+2023-09-23 16:20:44 
+2023-09-23 16:20:44 Http Worker is working...
+2023-09-23 16:20:44 GET /src/main/java/org/example/aplication HTTP/1.1
+2023-09-23 16:20:44 > This is a [DIRECTORY EXPLORE] request..
+2023-09-23 16:20:44 >> Explore the content under folder: aplication
+2023-09-23 16:20:44 >>> File: teste.html
+2023-09-23 16:20:45 
+2023-09-23 16:20:45 Http Worker is working...
+2023-09-23 16:20:45 GET /images/html.png HTTP/1.1
+2023-09-23 16:20:45 >> No such resource:/images/html.png
+2023-09-23 16:20:45 
+2023-09-23 16:20:45 Http Worker is working...
+2023-09-23 16:20:45 GET /src/main/java/org/example/aplication/teste.html HTTP/1.1
+2023-09-23 16:20:45 > This is a [SINGLE FILE] request..
+2023-09-23 16:20:45 >> Seek the content of file: teste.html
+2023-09-23 16:20:46 
+2023-09-23 16:20:46 Http Worker is working...
+2023-09-23 16:20:46 GET /favicon.ico HTTP/1.1
+2023-09-23 16:20:46 >> No such resource:/favicon.ico
+2023-09-23 16:20:48 
+2023-09-23 16:20:48 Http Worker is working...
+2023-09-23 16:20:48 GET /favicon.ico HTTP/1.1
+2023-09-23 16:20:48 >> No such resource:/favicon.ico
+2023-09-23 16:20:48 
+2023-09-23 16:20:48 Http Worker is working...
+2023-09-23 16:20:48 GET /src/main/java/org/example/socket HTTP/1.1
+2023-09-23 16:20:48 > This is a [DIRECTORY EXPLORE] request..
+2023-09-23 16:20:48 >> Explore the content under folder: socket
+2023-09-23 16:20:48 >>> File: HttpWorker.java
+2023-09-23 16:20:48 >>> File: LogUtil.java
+2023-09-23 16:20:48 >>> File: WebServer.java
+2023-09-23 16:20:48 
+2023-09-23 16:20:48 Http Worker is working...
+2023-09-23 16:20:48 GET /images/java.png HTTP/1.1
+2023-09-23 16:20:48 >> No such resource:/images/java.png
+2023-09-23 16:20:50 
+2023-09-23 16:20:50 Http Worker is working...
+2023-09-23 16:20:50 GET /src/main/java/org/example/socket/HttpWorker.java HTTP/1.1
+2023-09-23 16:20:50 > This is a [SINGLE FILE] request..
+2023-09-23 16:20:50 >> Seek the content of file: HttpWorker.java
+2023-09-23 16:21:03 
+2023-09-23 16:21:03 Http Worker is working...
+2023-09-23 16:21:03 GET /src/main/java/org/example/socket/LogUtil.java HTTP/1.1
+2023-09-23 16:21:03 > This is a [SINGLE FILE] request..
+2023-09-23 16:21:03 >> Seek the content of file: LogUtil.java
+2023-09-23 16:21:08 
+2023-09-23 16:21:08 Http Worker is working...
+2023-09-23 16:21:08 GET /images/folder.png HTTP/1.1
+2023-09-23 16:21:08 >> No such resource:/images/folder.png
+2023-09-23 16:21:09 
+2023-09-23 16:21:09 Http Worker is working...
+2023-09-23 16:21:09 GET /src/main/java/org/example/socket/WebServer.java HTTP/1.1
+2023-09-23 16:21:09 > This is a [SINGLE FILE] request..
+2023-09-23 16:21:09 >> Seek the content of file: WebServer.java
+2023-09-23 16:21:20 
+2023-09-23 16:21:20 Http Worker is working...
+2023-09-23 16:21:20 GET /favicon.ico HTTP/1.1
+2023-09-23 16:21:20 >> No such resource:/favicon.ico
+2023-09-23 16:21:29 
+2023-09-23 16:21:29 Http Worker is working...
+2023-09-23 16:21:29 GET /favicon.ico HTTP/1.1
+2023-09-23 16:21:29 >> No such resource:/favicon.ico

@@ -14,4 +14,17 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
+    <build>
+    <!-- other stuffs inside your build section-->
+
+        <plugins>
+            <!-- Jetty Plugin. Default port is 8080 -->
+            <plugin>
+                <groupId>org.eclipse.jetty</groupId>
+                <artifactId>jetty-maven-plugin</artifactId>
+                <version>9.4.28.v20200408</version>
+            </plugin>
+        </plugins>
+    </build>
+
 </project>
