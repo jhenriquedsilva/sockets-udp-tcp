@@ -1,4 +1,4 @@
-package org.example.socket;
+package org.example.socketTCP;
 
 import java.io.BufferedWriter;
 import java.io.FileNotFoundException;
