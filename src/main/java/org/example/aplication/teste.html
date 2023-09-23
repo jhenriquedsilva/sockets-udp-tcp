@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Temporizador</title>
+    <script>
+        var timer;
+
+        function startTimer() {
+            var seconds = parseInt(document.getElementById("secondsInput").value);
+            if (!isNaN(seconds) && seconds > 0) {
+                document.getElementById("timerDisplay").textContent = seconds;
+                timer = setInterval(updateTimer, 1000);
+                document.getElementById("secondsInput").disabled = true;
+            } else {
+                alert("Por favor, insira um número válido de segundos maior que 0.");
+            }
+        }
+
+        function updateTimer() {
+            var currentValue = parseInt(document.getElementById("timerDisplay").textContent);
+            if (currentValue > 0) {
+                document.getElementById("timerDisplay").textContent = currentValue - 1;
+            } else {
+                clearInterval(timer);
+                document.getElementById("secondsInput").disabled = false;
+                alert("Temporizador expirado!");
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Temporizador</h1>
+    <p>Insira o número de segundos para o temporizador:</p>
+    <input type="number" id="secondsInput" min="1">
+    <button onclick="startTimer()">Iniciar Temporizador</button>
+    <p>Tempo restante: <span id="timerDisplay">0</span> segundos</p>
+</body>
+
+</html>
