@@ -18,7 +18,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-class novo extends Thread {
+class HttpWorker extends Thread {
  
     Socket socket;
     String clientRequest;
@@ -27,7 +27,7 @@ class novo extends Thread {
      * Construct
      * @param s, the socket which is to be monitored
      */
-    public novo (String req, Socket s)
+    public HttpWorker (String req, Socket s)
     {
         socket = s;
         clientRequest = req;
@@ -49,7 +49,6 @@ class novo extends Thread {
             LogUtil.write("Http Worker is working...");
             LogUtil.write(clientRequest);
  
-
             if (!clientRequest.startsWith("GET") || clientRequest.length() < 14 ||
                     !(clientRequest.endsWith("HTTP/1.0") || clientRequest.endsWith("HTTP/1.1"))) {
                 // bad request
@@ -80,12 +79,12 @@ class novo extends Thread {
                     }
                     // Handle requests
                     if (req.indexOf(".")>-1) { // Request for single file
-                        if (req.indexOf(".fake-cgi") > -1) { // CGI request
+                        if (req.indexOf(".fake-cgi")>-1) { // CGI request
                             LogUtil.write("> This is a [CGI] request..");
                             handleCGIRequest(req, printer);
                         }
                         else { // Single file request
-                            if (!req.startsWith("/images/") && !req.startsWith("/favicon.ico")) {
+                            if (!req.startsWith("/images/")&&!req.startsWith("/favicon.ico")) {
                                 LogUtil.write("> This is a [SINGLE FILE] request..");
                             }
                             handleFileRequest(req, printer);

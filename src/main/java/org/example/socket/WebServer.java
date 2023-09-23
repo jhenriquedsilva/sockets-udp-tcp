@@ -20,17 +20,17 @@ public class WebServer {
         // A reference of the client socket
         Socket socket;
  
-        try (ServerSocket servsocket = new ServerSocket(port, queue_len)) {
+        try {
             // Setup the server socket
-            // ServerSocket servsocket = new ServerSocket(port, queue_len);
+            ServerSocket servsocket = new ServerSocket(port, queue_len);
             System.out.println("Web Server is starting up, listening at port " + port + ".");
             System.out.println("You can access http://localhost:2540 now.");
  
-            while(true) {
+            while(true){
                 // Make the server socket wait for the next client request
                 socket = servsocket.accept();
                 // Local reader from the client
-                BufferedReader reader = new BufferedReader(new InputStreamReader(socket.getInputStream()));
+                BufferedReader reader =new BufferedReader(new InputStreamReader(socket.getInputStream()));
  
                 // Assign http requests to HttpWorker
                 String req = "";
@@ -45,7 +45,7 @@ public class WebServer {
                 }
  
                 if (req != null && !req.equals("")) {
-                    new novo(req, socket).start();
+                    new HttpWorker(req, socket).start();
                 }
             }
         }
