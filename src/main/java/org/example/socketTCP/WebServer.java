@@ -33,8 +33,7 @@ public class WebServer {
                 BufferedReader reader =new BufferedReader(new InputStreamReader(socket.getInputStream()));
  
                 // Assign http requests to HttpWorker
-                String req = "";
-                String clientRequest = "";
+                String req = "", clientRequest = "";
                 while ((clientRequest = reader.readLine()) != null) {
                     if (req.equals("")) {
                         req  = clientRequest;

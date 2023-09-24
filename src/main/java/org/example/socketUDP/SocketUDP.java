@@ -25,10 +25,7 @@ public class SocketUDP {
         ByteBuffer byteBuffer = ByteBuffer.allocate(2).putShort(requestFlags);
         byte[] flagsByteArray = byteBuffer.array();
 
-        short QDCOUNT = 1;
-        short ANCOUNT = 0;
-        short NSCOUNT = 0;
-        short ARCOUNT = 0;
+        short QDCOUNT = 1, ANCOUNT = 0, NSCOUNT = 0, ARCOUNT = 0;
 
         dataOutputStream.writeShort(ID);
         dataOutputStream.write(flagsByteArray);
@@ -73,36 +70,29 @@ public class SocketUDP {
         System.out.println("\n");
 
         DataInputStream dataInputStream = new DataInputStream(new ByteArrayInputStream(response));
-        System.out.println("\n\nStart response decode");
-        System.out.println("Transaction ID: " + dataInputStream.readShort()); // ID
+        System.out.println("\n\nStart response decode\nTransaction ID: " + dataInputStream.readShort()); // ID
         short flags = dataInputStream.readByte();
-        int QR = (flags & 0b10000000) >>> 7;
-        int opCode = (flags & 0b01111000) >>> 3;
-        int AA = (flags & 0b00000100) >>> 2;
-        int TC = (flags & 0b00000010) >>> 1;
-        int RD = flags & 0b00000001;
-        System.out.println("QR " + QR);
-        System.out.println("Opcode " + opCode);
-        System.out.println("AA " + AA);
-        System.out.println("TC " + TC);
-        System.out.println("RD " + RD);
+
+        System.out.println("QR: " + ((flags & 0b10000000) >>> 7) +
+                            "\nOpcode: " + ((flags & 0b01111000) >>> 3) +
+                            "\nAA: " + ((flags & 0b00000100) >>> 2) +
+                            "\nTC: " + ((flags & 0b00000010) >>> 1) +
+                            "\nRD: " + (flags & 0b00000001));
         flags = dataInputStream.readByte();
-        int RA = (flags & 0b10000000) >>> 7;
-        int Z = (flags & 0b01110000) >>> 4;
-        int RCODE = flags & 0b00001111;
-        System.out.println("RA " + RA);
-        System.out.println("Z " + Z);
-        System.out.println("RCODE " + RCODE);
+
+        System.out.println("RA: " + ((flags & 0b10000000) >>> 7) +
+                            "\nZ: " + ((flags & 0b01110000) >>> 4) +
+                            "\nRCODE: " + (flags & 0b00001111));
 
         QDCOUNT = dataInputStream.readShort();
         ANCOUNT = dataInputStream.readShort();
         NSCOUNT = dataInputStream.readShort();
         ARCOUNT = dataInputStream.readShort();
 
-        System.out.println("Questions: " + String.format("%s", QDCOUNT));
-        System.out.println("Answers RRs: " + String.format("%s", ANCOUNT));
-        System.out.println("Authority RRs: " + String.format("%s", NSCOUNT));
-        System.out.println("Additional RRs: " + String.format("%s", ARCOUNT));
+        System.out.println("Questions: " + String.format("%s", QDCOUNT) +
+                            "\nAnswers RRs: " + String.format("%s", ANCOUNT) +
+                            "\nAuthority RRs: " + String.format("%s", NSCOUNT) +
+                            "\nAdditional RRs: " + String.format("%s", ARCOUNT));
 
         String QNAME = "";
         int recLen;
@@ -113,13 +103,11 @@ public class SocketUDP {
             }
             QNAME = new String(record, StandardCharsets.UTF_8);
         }
-        short QTYPE = dataInputStream.readShort();
-        short QCLASS = dataInputStream.readShort();
-        System.out.println("Record: " + QNAME);
-        System.out.println("Record Type: " + String.format("%s", QTYPE));
-        System.out.println("Class: " + String.format("%s", QCLASS));
-
-        System.out.println("\n\nstart answer, authority, and additional sections\n");
+        short QTYPE = dataInputStream.readShort(), QCLASS = dataInputStream.readShort();
+        System.out.println("Record: " + QNAME +
+                            "\nRecord Type: " + String.format("%s", QTYPE) +
+                            "\nClass: " + String.format("%s", QCLASS) +
+                            "\n\nStart answer, authority, and additional sections\n");
 
         byte firstBytes = dataInputStream.readByte();
         int firstTwoBits = (firstBytes & 0b11000000) >>> 6;
@@ -154,10 +142,10 @@ public class SocketUDP {
                             RDATA.add(nx);
                         }
 
-                        System.out.println("Type: " + TYPE);
-                        System.out.println("Class: " + CLASS);
-                        System.out.println("Time to live: " + TTL);
-                        System.out.println("Rd Length: " + RDLENGTH);
+                        System.out.println("Type: " + TYPE +
+                                            "\nClass: " + CLASS +
+                                            "\nTime to live: " + TTL +
+                                            "\nRd Length: " + RDLENGTH);
                     }
 
                     DOMAINS.add(label.toString(StandardCharsets.UTF_8));
