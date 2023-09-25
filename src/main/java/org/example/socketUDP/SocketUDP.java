@@ -13,7 +13,7 @@ public class SocketUDP {
 
     public static void main(String[] args) throws IOException {
 
-        InetAddress ipAddress = InetAddress.getByName("1.1.1.1");
+        InetAddress ipAddress = InetAddress.getByName("1.0.0.1");
 
 
         short ID = createId();
