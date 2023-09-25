@@ -15,17 +15,14 @@ public class SocketUDP {
 
         InetAddress ipAddress = InetAddress.getByName("1.1.1.1");
 
-        Random random = new Random();
-        short ID = (short) random.nextInt(32767);
-        System.out.println(ID);
-        ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
-        DataOutputStream dataOutputStream = new DataOutputStream(byteArrayOutputStream);
 
-        short requestFlags = Short.parseShort("0000000100000000", 2);
-        ByteBuffer byteBuffer = ByteBuffer.allocate(2).putShort(requestFlags);
-        byte[] flagsByteArray = byteBuffer.array();
+        short ID = createId();
+        byte[] flagsByteArray = createFlags();
 
         short QDCOUNT = 1, ANCOUNT = 0, NSCOUNT = 0, ARCOUNT = 0;
+
+        ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
+        DataOutputStream dataOutputStream = new DataOutputStream(byteArrayOutputStream);
 
         dataOutputStream.writeShort(ID);
         dataOutputStream.write(flagsByteArray);
@@ -33,6 +30,7 @@ public class SocketUDP {
         dataOutputStream.writeShort(ANCOUNT);
         dataOutputStream.writeShort(NSCOUNT);
         dataOutputStream.writeShort(ARCOUNT);
+
         String domain = "ufpa.br";
         String[] domainParts = domain.split("\\.");
 
@@ -41,74 +39,34 @@ public class SocketUDP {
             dataOutputStream.writeByte(domainBytes.length);
             dataOutputStream.write(domainBytes);
         }
-        // No more parts
+
         dataOutputStream.writeByte(0);
-        // Type 0x01 = A (Host Request)
+
         dataOutputStream.writeShort(1);
-        // Class 0x01 = IN
+
         dataOutputStream.writeShort(1);
 
         byte[] dnsFrame = byteArrayOutputStream.toByteArray();
 
-        System.out.println("SendataInputStreamg: " + dnsFrame.length + " bytes");
-        for (int i = 0; i < dnsFrame.length; i++) {
-            System.out.print(String.format("%s", dnsFrame[i]) + " ");
-        }
-
-        DatagramSocket socket = new DatagramSocket();
         DatagramPacket dnsReqPacket = new DatagramPacket(dnsFrame, dnsFrame.length, ipAddress, DNS_SERVER_PORT);
+        DatagramSocket socket = new DatagramSocket();
         socket.send(dnsReqPacket);
 
         byte[] response = new byte[1024];
         DatagramPacket packet = new DatagramPacket(response, response.length);
         socket.receive(packet);
 
-        System.out.println("\n\nReceived: " + packet.getLength() + " bytes");
-        for (int i = 0; i < packet.getLength(); i++) {
-            System.out.print(String.format("%s", response[i]) + " ");
-        }
-        System.out.println("\n");
-
         DataInputStream dataInputStream = new DataInputStream(new ByteArrayInputStream(response));
-        System.out.println("\n\nStart response decode\nTransaction ID: " + dataInputStream.readShort()); // ID
-        short flags = dataInputStream.readByte();
 
-        System.out.println("QR: " + ((flags & 0b10000000) >>> 7) +
-                            "\nOpcode: " + ((flags & 0b01111000) >>> 3) +
-                            "\nAA: " + ((flags & 0b00000100) >>> 2) +
-                            "\nTC: " + ((flags & 0b00000010) >>> 1) +
-                            "\nRD: " + (flags & 0b00000001));
-        flags = dataInputStream.readByte();
+        readId(dataInputStream);
 
-        System.out.println("RA: " + ((flags & 0b10000000) >>> 7) +
-                            "\nZ: " + ((flags & 0b01110000) >>> 4) +
-                            "\nRCODE: " + (flags & 0b00001111));
+        readFlags(dataInputStream);
 
-        QDCOUNT = dataInputStream.readShort();
-        ANCOUNT = dataInputStream.readShort();
-        NSCOUNT = dataInputStream.readShort();
-        ARCOUNT = dataInputStream.readShort();
+        readHeader(dataInputStream);
 
-        System.out.println("Questions: " + String.format("%s", QDCOUNT) +
-                            "\nAnswers RRs: " + String.format("%s", ANCOUNT) +
-                            "\nAuthority RRs: " + String.format("%s", NSCOUNT) +
-                            "\nAdditional RRs: " + String.format("%s", ARCOUNT));
+        readQuestion(dataInputStream);
 
-        String QNAME = "";
-        int recLen;
-        while ((recLen = dataInputStream.readByte()) > 0) {
-            byte[] record = new byte[recLen];
-            for (int i = 0; i < recLen; i++) {
-                record[i] = dataInputStream.readByte();
-            }
-            QNAME = new String(record, StandardCharsets.UTF_8);
-        }
-        short QTYPE = dataInputStream.readShort(), QCLASS = dataInputStream.readShort();
-        System.out.println("Record: " + QNAME +
-                            "\nRecord Type: " + String.format("%s", QTYPE) +
-                            "\nClass: " + String.format("%s", QCLASS) +
-                            "\n\nStart answer, authority, and additional sections\n");
-
+        // Read answer, authority, and additional sections
         byte firstBytes = dataInputStream.readByte();
         int firstTwoBits = (firstBytes & 0b11000000) >>> 6;
 
@@ -159,7 +117,7 @@ public class SocketUDP {
                 }
 
                 for (String domainPart : DOMAINS) {
-                    if (!domainPart.equals("")) {
+                    if (!domainPart.isEmpty()) {
                         domainSb.append(domainPart).append(".");
                     }
                 }
@@ -178,4 +136,67 @@ public class SocketUDP {
 
         domainToIp.forEach((key, value) -> System.out.println(key + " : " + value));
     }
+
+    static short createId() {
+        Random random = new Random();
+        return (short) random.nextInt(32767);
+    }
+
+    static byte[] createFlags() {
+        short requestFlags = Short.parseShort("0000000100000000", 2);
+        ByteBuffer byteBuffer = ByteBuffer.allocate(2).putShort(requestFlags);
+        return  byteBuffer.array();
+    }
+
+    private static void readId(DataInputStream dataInputStream) throws IOException {
+        System.out.println("\n\nID: " + dataInputStream.readShort());
+    }
+
+    private static void readFlags(DataInputStream dataInputStream) throws IOException {
+        short flags = dataInputStream.readByte();
+
+        System.out.println("QR: " + ((flags & 0b10000000) >>> 7) +
+                "\nOpcode: " + ((flags & 0b01111000) >>> 3) +
+                "\nAA: " + ((flags & 0b00000100) >>> 2) +
+                "\nTC: " + ((flags & 0b00000010) >>> 1) +
+                "\nRD: " + (flags & 0b00000001));
+        flags = dataInputStream.readByte();
+
+        System.out.println("RA: " + ((flags & 0b10000000) >>> 7) +
+                "\nZ: " + ((flags & 0b01110000) >>> 4) +
+                "\nRCODE: " + (flags & 0b00001111));
+    }
+
+    private static void readHeader(DataInputStream dataInputStream) throws IOException {
+        short QDCOUNT = dataInputStream.readShort();
+        short ANCOUNT = dataInputStream.readShort();
+        short  NSCOUNT = dataInputStream.readShort();
+        short ARCOUNT = dataInputStream.readShort();
+
+        System.out.println("Questions: " + String.format("%s", QDCOUNT) +
+                "\nAnswers RRs: " + String.format("%s", ANCOUNT) +
+                "\nAuthority RRs: " + String.format("%s", NSCOUNT) +
+                "\nAdditional RRs: " + String.format("%s", ARCOUNT));
+    }
+
+    private static void readQuestion(DataInputStream dataInputStream) throws IOException {
+        String QNAME = "";
+        int recLen;
+        while ((recLen = dataInputStream.readByte()) > 0) {
+            byte[] record = new byte[recLen];
+            for (int i = 0; i < recLen; i++) {
+                record[i] = dataInputStream.readByte();
+            }
+            QNAME = new String(record, StandardCharsets.UTF_8);
+        }
+
+        short QTYPE = dataInputStream.readShort();
+        short QCLASS = dataInputStream.readShort();
+
+        System.out.println("Record: " + QNAME +
+                "\nRecord Type: " + String.format("%s", QTYPE) +
+                "\nClass: " + String.format("%s", QCLASS) +
+                "\n\nStart answer, authority, and additional sections\n");
+    }
 }
+
