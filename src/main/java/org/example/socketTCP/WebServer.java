@@ -1,59 +1,71 @@
 package org.example.socketTCP;
 
 import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.ServerSocket;
 import java.net.Socket;
-
+import java.util.Properties;
 
 public class WebServer {
     /**
-     * Start a Server Socket to monitor client requests and dispatches the http
-     * request to HttpWorkers.
+     * Inicia um servidor socket para monitorar as requisições do cliente
+     * e então as envia para o HttpWorker
+     * 
+     * @throws IOException
      */
     public static void main(String args[]) {
-        // The maximum queue length for incoming connection
-        int queue_len = 6;
-        int port = 2540;
+        // Comprimento máximo da fila para novas conexões
+        int queue_len;
+        int port;
 
-        // A reference of the client socket
+        // Representa o cliente socket
         Socket socket;
- 
+
         try {
-            // Setup the server socket
+            // Recebe parâmetros de config.properties
+            String basePath = new File("").getAbsolutePath();
+            String configFilePath = basePath + "/config.properties";
+
+            FileInputStream propsInput = new FileInputStream(configFilePath);
+
+            Properties prop = new Properties();
+            prop.load(propsInput);
+
+            queue_len = Integer.parseInt(prop.getProperty("QUEUE_LEN"));
+            port = Integer.parseInt(prop.getProperty("PORT"));
+
+            // Setup do server socket
             ServerSocket servsocket = new ServerSocket(port, queue_len);
-            System.out.println("Web Server is starting up, listening at port " + port + ".");
-            System.out.println("You can access http://localhost:2540 now.");
- 
-            while(true){
-                // Make the server socket wait for the next client request
+            System.out.println("Servidor web está iniciando, escutando na porta " + port + ".");
+            System.out.println("Pode acessar em http://localhost:2540.");
+
+            while (true) {
                 socket = servsocket.accept();
-                // Local reader from the client
-                BufferedReader reader =new BufferedReader(new InputStreamReader(socket.getInputStream()));
- 
-                // Assign http requests to HttpWorker
-                String req = "", clientRequest = "";
+                BufferedReader reader = new BufferedReader(new InputStreamReader(socket.getInputStream()));
+
+                String req = "";
+                String clientRequest = "";
                 while ((clientRequest = reader.readLine()) != null) {
                     if (req.equals("")) {
-                        req  = clientRequest;
+                        req = clientRequest;
                     }
-                    if (clientRequest.equals("")) { // If the end of the http request, stop
+                    if (clientRequest.equals("")) { // parar se a requisição chegar ao fim
                         break;
                     }
                 }
- 
+
                 if (req != null && !req.equals("")) {
                     new HttpWorker(req, socket).start();
                 }
             }
-        }
-        catch(IOException ex){
-            //Handle the exception
+        } catch (IOException ex) {
+            // Handle the exception
             System.out.println(ex);
-        }
-        finally {
-            System.out.println("Server has been shutdown!");
+        } finally {
+            System.out.println("Servidor foi fechado!");
         }
     }
 }

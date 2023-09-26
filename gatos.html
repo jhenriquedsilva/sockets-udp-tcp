@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frases Motivacionais com Gatos</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f5f5f5; /* Cor de fundo ligeiramente menos branco */
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 20px;
+            text-align: center;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 20px;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        button {
+            font-size: 16px;
+            padding: 10px 20px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Frases Motivacionais com Gatos</h1>
+    <div class="container">
+        <p id="frase"></p>
+        <img id="gato" src="" alt="Imagem de um gato">
+    </div>
+    <button id="mostrarFrase">Mostrar Frase e Gato</button>
+
+    <script>
+        // Array de frases motivacionais
+        const frasesMotivacionais = [
+            "Acredite em si mesmo e tudo será possível.",
+            "O sucesso é a soma de pequenos esforços repetidos dia após dia.",
+            "A persistência é o caminho do êxito.",
+            "A única forma de fazer um excelente trabalho é amar o que você faz.",
+            "Nunca é tarde demais para ser aquilo que você poderia ter sido."
+        ];
+
+        // Array de URLs de imagens de gatos (substitua pelas URLs desejadas)
+        const imagensDeGatos = [
+            "/images/catired.png",
+            "/images/hurtcat2.jpg",
+            "/images/catpaint.png",
+            "/images/cat.png",
+            "/images/catsu.jpg"
+        ];
+
+        function randomIntFromInterval(min, max) { // min and max included 
+            return Math.floor(Math.random() * (max - min + 1) + min)
+        }
+
+        // Função para exibir uma frase motivacional e uma imagem de gato aleatória
+        function mostrarFraseEGato() {
+            const indiceFrase = randomIntFromInterval(0, frasesMotivacionais.length-1);
+            const indiceGato = randomIntFromInterval(0, imagensDeGatos.length-1);
+
+            const frase = frasesMotivacionais[indiceFrase];
+            const urlGato = imagensDeGatos[indiceGato];
+
+            document.getElementById("frase").textContent = frase;
+            document.getElementById("gato").src = urlGato;
+        }
+
+        // Adicionar um ouvinte de evento para o botão
+        document.getElementById("mostrarFrase").addEventListener("click", mostrarFraseEGato);
+
+        // Exibir uma frase motivacional e uma imagem de gato inicial
+        mostrarFraseEGato();
+    </script>
+</body>
+</html>
