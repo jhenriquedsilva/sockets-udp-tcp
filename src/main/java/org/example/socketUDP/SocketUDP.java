@@ -189,18 +189,6 @@ public class SocketUDP {
                 "\nRCODE: " + (flags & 0b00001111));
     }
 
-    private static void readHeader(DataInputStream dataInputStream) throws IOException {
-        short QDCOUNT = dataInputStream.readShort();
-        short ANCOUNT = dataInputStream.readShort();
-        short  NSCOUNT = dataInputStream.readShort();
-        short ARCOUNT = dataInputStream.readShort();
-
-        System.out.println("Questions: " + String.format("%s", QDCOUNT) +
-                "\nAnswers RRs: " + String.format("%s", ANCOUNT) +
-                "\nAuthority RRs: " + String.format("%s", NSCOUNT) +
-                "\nAdditional RRs: " + String.format("%s", ARCOUNT));
-    }
-
     private static void readQuestion(DataInputStream dataInputStream) throws IOException {
         String QNAME = "";
         int recLen;
