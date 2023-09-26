@@ -48,6 +48,11 @@ public class SocketUDP {
 
         byte[] dnsFrame = byteArrayOutputStream.toByteArray();
 
+        System.out.println("Sending: " + dnsFrame.length + " bytes");
+        for (int i = 0; i < dnsFrame.length; i++) {
+            System.out.print(String.format("%s", dnsFrame[i]) + " ");
+        }
+
         DatagramPacket dnsReqPacket = new DatagramPacket(dnsFrame, dnsFrame.length, ipAddress, DNS_SERVER_PORT);
         DatagramSocket socket = new DatagramSocket();
         socket.send(dnsReqPacket);
@@ -56,13 +61,30 @@ public class SocketUDP {
         DatagramPacket packet = new DatagramPacket(response, response.length);
         socket.receive(packet);
 
+        System.out.println("\n\nReceived: " + packet.getLength() + " bytes");
+        for (int i = 0; i < packet.getLength(); i++) {
+            System.out.print(String.format("%s", response[i]) + " ");
+        }
+        System.out.println("\n");
+
+        System.out.println("\n\nStart decoding");
+
         DataInputStream dataInputStream = new DataInputStream(new ByteArrayInputStream(response));
 
         readId(dataInputStream);
 
         readFlags(dataInputStream);
 
-        readHeader(dataInputStream);
+        // Read header
+        QDCOUNT = dataInputStream.readShort();
+        ANCOUNT = dataInputStream.readShort();
+        NSCOUNT = dataInputStream.readShort();
+        ARCOUNT = dataInputStream.readShort();
+
+        System.out.println("Questions: " + String.format("%s", QDCOUNT) +
+                "\nAnswers RRs: " + String.format("%s", ANCOUNT) +
+                "\nAuthority RRs: " + String.format("%s", NSCOUNT) +
+                "\nAdditional RRs: " + String.format("%s", ARCOUNT));
 
         readQuestion(dataInputStream);
 
