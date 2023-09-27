@@ -76,6 +76,7 @@ public class SocketUDP {
         readFlags(dataInputStream);
 
         // Read header
+
         QDCOUNT = dataInputStream.readShort();
         ANCOUNT = dataInputStream.readShort();
         NSCOUNT = dataInputStream.readShort();
@@ -96,16 +97,23 @@ public class SocketUDP {
         Map<String, String> domainToIp = new HashMap<>();
 
         for (int i = 0; i < ANCOUNT; i++) {
+            // It is a pointer
             if (firstTwoBits == 3) {
+                // The offset
                 byte currentByte = dataInputStream.readByte();
                 boolean stop = false;
+                // Copy the original response from the offset to the end
                 byte[] newArray = Arrays.copyOfRange(response, currentByte, response.length);
+
                 DataInputStream sectionDataInputStream = new DataInputStream(new ByteArrayInputStream(newArray));
                 ArrayList<Integer> RDATA = new ArrayList<>();
                 ArrayList<String> DOMAINS = new ArrayList<>();
                 while (!stop) {
+                    // Read number of letters
                     byte nextByte = sectionDataInputStream.readByte();
+                    // If it is not the end
                     if (nextByte != 0) {
+                        // Iterate the number of letters
                         byte[] currentLabel = new byte[nextByte];
                         for (int j = 0; j < nextByte; j++) {
                             currentLabel[j] = sectionDataInputStream.readByte();
@@ -118,7 +126,8 @@ public class SocketUDP {
                         int TTL = dataInputStream.readInt();
                         int RDLENGTH = dataInputStream.readShort();
                         for (int s = 0; s < RDLENGTH; s++) {
-                            int nx = dataInputStream.readByte() & 255;// and with 255 to
+                            // AND operation with 11111111
+                            int nx = dataInputStream.readByte() & 255;
                             RDATA.add(nx);
                         }
 
@@ -134,19 +143,23 @@ public class SocketUDP {
 
                 StringBuilder ip = new StringBuilder();
                 StringBuilder domainSb = new StringBuilder();
+                // Build ip address from strings stored in array
                 for (Integer ipPart : RDATA) {
                     ip.append(ipPart).append(".");
                 }
 
+                // Build domain from strings stored in array
                 for (String domainPart : DOMAINS) {
                     if (!domainPart.isEmpty()) {
                         domainSb.append(domainPart).append(".");
                     }
                 }
+
                 String domainFinal = domainSb.toString();
                 String ipFinal = ip.toString();
-                domainToIp.put(ipFinal.substring(0, ipFinal.length() - 1),
-                        domainFinal.substring(0, domainFinal.length() - 1));
+
+                // Put ip address and domain in a map
+                domainToIp.put(ipFinal.substring(0, ipFinal.length() - 1), domainFinal.substring(0, domainFinal.length() - 1));
 
             } else if (firstTwoBits == 0) {
                 System.out.println("It's a label");
@@ -156,6 +169,7 @@ public class SocketUDP {
             firstTwoBits = (firstBytes & 0b11000000) >>> 6;
         }
 
+        // Print result
         domainToIp.forEach((key, value) -> System.out.println(key + " : " + value));
     }
 
